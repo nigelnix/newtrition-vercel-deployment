@@ -6,8 +6,5 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',  // Adjust if needed
-    rollupOptions: {
-      input: './src/frontend/main.jsx',  // Assuming main.jsx is your entry point
     },
-  },
 })
