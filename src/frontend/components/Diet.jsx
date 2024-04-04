@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Header from "./Header";
 import shrug from "../assets/shrug.png";
 
-const apiUrl = process.env.REACT_APP_API_BASE_URL;
+const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/tracking`;
 
 function Diet() {
   let loggedData = useContext(UserContext);
@@ -39,7 +39,7 @@ function Diet() {
   const formattedDay = formatNumberWithLeadingZero(adjustedDate.getDate());
 
   fetch(
-    `${apiUrl}/tracking/${
+    `${apiUrl}/${
       loggedData.loggedUser.userid
     }/${formattedMonth}-${formattedDay}-${adjustedDate.getFullYear()}`,
     {

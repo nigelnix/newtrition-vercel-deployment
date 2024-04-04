@@ -5,7 +5,7 @@ import { UserContext } from "../contexts/UserContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-const apiUrl = process.env.REACT_APP_API_BASE_URL;
+const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/tracking`;
 
 function Food(props) {
   const navigate = useNavigate();
@@ -56,7 +56,7 @@ function Food(props) {
     };
     
 
-    fetch(`${apiUrl}/tracking`, {
+    fetch(apiUrl , {
       method: "POST",
       body: JSON.stringify(trackedItem),
       headers: {

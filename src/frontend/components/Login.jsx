@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
 
-const apiUrl = process.env.REACT_APP_API_BASE_URL;
+const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/login`;
 
 function Login() {
   const navigate = useNavigate();
@@ -30,7 +30,7 @@ function Login() {
     event.preventDefault();
     console.log(userCreds);
 
-    fetch(`${apiUrl}/login`, {
+    fetch(apiUrl, {
       method: "POST",
       body: JSON.stringify(userCreds),
       headers: {

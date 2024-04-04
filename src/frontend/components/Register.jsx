@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const apiUrl = process.env.REACT_APP_API_BASE_URL;
+const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/tracking`;
+
 
 function Register() {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ function Register() {
   function handleSubmit(event) {
     event.preventDefault();
 
-    fetch(`${apiUrl}/register`, {
+    fetch(apiUrl , {
       method: "POST",
       body: JSON.stringify(userDetails),
       headers: {
