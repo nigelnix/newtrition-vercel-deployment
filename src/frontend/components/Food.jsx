@@ -5,7 +5,7 @@ import { UserContext } from "../contexts/UserContext";
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/tracking`;
+const apiUrl = `${window.location.origin}/tracking`;
 
 function Food(props) {
   const navigate = useNavigate();

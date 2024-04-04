@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "../contexts/UserContext";
 
-const apiUrl = `${process.env.REACT_APP_API_BASE_URL}/login`;
+const apiUrl = `${window.location.origin}/login`;
 
 function Login() {
   const navigate = useNavigate();
