@@ -181,8 +181,7 @@ app.get("/tracking/:userid/:date", async (req, res) => {
 });
 
   
-  // starting the server
-  // app.listen(port, () => {
-  //   console.log(`Server up and running on port: ${port}`);
-  // });
+app.listen(() => {
+  console.log('Server listening');
+});
   
