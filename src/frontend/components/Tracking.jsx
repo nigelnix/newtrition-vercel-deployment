@@ -5,7 +5,7 @@ import Food from "./Food";
 import Header from "./Header";
 import diet from "../assets/diet.png";
 
-const apiUrl = `${window.location.origin}/src/api/foods`;
+const apiUrl = `${window.location.origin}/api/foods`;
 
 function Tracking() {
   const loggedData = useContext(UserContext);
