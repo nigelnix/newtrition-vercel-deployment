@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-const apiUrl = `${window.location.origin}/tracking`;
+const apiUrl = `${window.location.origin}/src/api/tracking`;
 
 
 function Register() {

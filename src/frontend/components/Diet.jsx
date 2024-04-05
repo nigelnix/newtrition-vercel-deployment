@@ -4,7 +4,7 @@ import { useContext } from "react";
 import Header from "./Header";
 import shrug from "../assets/shrug.png";
 
-const apiUrl = `${window.location.origin}/tracking`;
+const apiUrl = `${window.location.origin}/src/api/tracking`;
 
 function Diet() {
   let loggedData = useContext(UserContext);
