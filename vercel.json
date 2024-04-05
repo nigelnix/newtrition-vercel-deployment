@@ -8,6 +8,10 @@
     {
       "src": "/(.*)",
       "dest": "dist/index.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1" 
     }
   ]
 }
